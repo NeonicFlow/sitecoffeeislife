@@ -1,0 +1,501 @@
+html {
+    scroll-behavior: smooth;
+::-webkit-scrollbar {
+    width: 24px;
+    height: 8px;
+    background-color: #3f4b29;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #77a840;
+    border-radius: 9em;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #3f4b29;
+}
+::-webkit-scrollbar-button:vertical:start:decrement {
+    background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(0deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+::-webkit-scrollbar-button:vertical:end:increment {
+    background:
+        linear-gradient(300deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(60deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(180deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+::-webkit-scrollbar-button:horizontal:start:decrement {
+    background:
+        linear-gradient(30deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(150deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(270deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+::-webkit-scrollbar-button:horizontal:end:increment {
+    background:
+        linear-gradient(210deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(330deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(90deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #eeab77;
+    background-image: url(imcss/bg.jpg);
+    margin-left: 120px;
+    margin-right: 120px;
+    background-repeat: no-repeat;
+    background-size: 1920px 1286px;
+}
+.btn-up {
+    position: fixed;
+    background-color: #00000033;
+    right: 20px;
+    bottom: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 50px;
+    transition: 0.3s;
+}
+.btn-up::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+}
+.btn-up_hide {
+    display: none;
+    transition: 1s;
+}
+@media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+      background-color: #00000085; /* цвет заднего фона при наведении */
+    }
+}
+header {
+    margin: 0px;
+}
+.header-line {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+}
+.logoname {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: 700px;
+    margin-left: 10px;
+    font-weight: 700px;
+    font-size: 30px;
+}
+.buttonbutton-orangeopener {
+    margin: 0px;
+    font-size: 25px;
+    font-weight: 700px;
+    color: white;
+    background: none;
+    outline: none;
+    border: none;
+    transition: 0.3s;
+    padding-top: 5px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+.buttonbutton-orangeopener:hover {
+    color: #DBFF00;
+}
+.header_contact { 
+    display: inline-flex; 
+    flex-wrap: wrap; 
+    align-items: center;
+}
+.contact_hide {
+    display: none;
+    margin: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.contact_hide:hover {
+    transform: scale(1.2);
+}
+.header-mail {
+    background-color: white;
+    padding: 5px;
+    border-radius: 30%;
+}
+.contact_main { 
+    display: block;
+    font-size: 25px;
+    background: none;
+    color: white;
+    transition: 0.3s;
+}
+.contact_main:hover {
+    color: #DBFF00;
+}
+.header_contact:hover .contact_hide { 
+    display: block;
+}
+.openyou {
+    color: #FFA800;
+    font-size: 75px;
+    margin-top: 100px;
+    text-decoration: none;
+}
+.cvyaz {
+    color: #84858593;
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: 700px;
+    font-size: 23px;
+    margin-left: 10px;
+}
+.raznovid {
+    color: #DBFF00;
+    text-decoration: none;
+    font-weight: 700px;
+    font-size: 35px;
+    margin-top: 50px;
+}
+.line-photo {
+    display: flex;
+    margin-top: 200px;
+    position: relative;
+}
+.line-photo div h3 {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    padding-left: 20px;
+    padding-top: 300px;
+    padding-bottom: 15px;
+    text-align: justify;
+}
+.text1 {
+    border: 6px solid yellowgreen;
+    border-radius: 15px; 
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 27px;
+    font-weight: 700px;
+    padding: 5px;
+    width: 33%;
+}
+.cofedrevo {
+    background-image: url(imcss/cofedrevo.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 401.3px;
+    width: 450px;
+    transition: 0.75s;
+    right: 520px;
+}
+.cofedrevo:hover {
+    transform: scale(1.1);
+    filter: saturate(150%);
+}
+.cofe {
+    background-image: url(imcss/cofe.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 401.3px;
+    width: 450px;
+    transition: 0.75s;
+    right: 0px;
+}
+.cofe:hover {
+    transform: scale(1.1);
+    filter: saturate(150%);
+}
+.soderzanie {
+    margin-top: 500px;
+    border: 7px solid #38300e;
+    border-radius: 30px;
+    background-color: #eed6a2;
+    padding: 2 10px;
+    text-align: center;
+    margin-left: 600px;
+    margin-right: 600px; 
+    background-image: url(imcss/coffeetree.jpg);
+}
+.textsoderz {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700px;
+    font-size: 40px;
+}
+.soderz {
+    color: #252525;
+    text-decoration: none;
+    font-weight: 700px;
+    font-size: 40px;
+}
+.soderz:hover {
+    color: #0000FF;
+}
+.что {
+    text-decoration: none;
+    font-weight: 700px;
+    font-size: 60px;
+}
+.kofe-это {
+    text-decoration: none;
+    font-weight: 700px;
+    font-size: 30px;
+    margin-right: 840px;
+}
+.cofenastole {
+    margin-left: 1080px;
+    margin-top: -500px;
+}
+.text2 {
+    margin-top: 500px;
+}
+.путькофе {
+    text-decoration: none;
+    font-weight: 700px;
+    font-size: 60px;
+}
+.text3 {
+    margin-top: 500px;
+}
+.threecolums {
+    display: inline-block;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.firstline {
+    float: left;
+    width: 33.3%;
+    height: 400px;
+    margin-top: -100px;
+}
+.firstline img {
+    border-radius: 20%;
+    transition: 1s;
+}
+.firstline img:hover {
+    width: 384px;
+    height: 384px;
+}
+.secondline {
+    float: left;
+    width: 33.3%;
+    margin-top: 50px;
+    height: 400px;
+}
+.secondline img {
+    border-radius: 20%;
+    transition: 1s;
+}
+.secondline img:hover {
+    width: 384px;
+    height: 384px;
+}
+.context {
+    text-decoration: none;
+    font-weight: 700px;
+    font-size: 30px;
+}
+.text4 {
+    margin-top: 500px;
+}
+.сортакофе {
+    text-decoration: none;
+    font-weight: 700px;
+    font-size: 60px;
+    text-align: center;
+}
+.textcols {
+	white-space: nowrap;
+}
+.textcols-item {
+    margin-top: 25px;
+	white-space: normal;
+	display: inline-block;
+	width: 40%;
+	vertical-align: top;
+    text-align: justify;
+    font-size: 28px;
+    border: 0px solid #000000;
+    border-radius: 20px;
+    padding: 1%;
+    background: linear-gradient(125deg, rgba(182, 255, 87, 0.75), rgba(255, 189, 97, 0.75));
+}
+.textcols .textcols-item:first-child {
+	margin-right: 16%;
+}
+.робуста {
+    font-size: 50px;
+    text-decoration: none;
+    font-weight: 700px;
+}
+.арабика {
+    font-size: 50px;
+    text-decoration: none;
+    font-weight: 700px;
+}
+.text5 {
+    margin-left: -120px;
+    margin-right: -120px;
+    margin-top: 500px;
+    padding-bottom: 50px;
+    border-radius: 15%;
+    border: 5px solid black;
+    background: linear-gradient(-45deg, #ff7e57, #ffef0b, #d3ff33, #28ff56);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+ 0% {
+   background-position: 0% 50%;
+}
+ 50% {
+   background-position: 100% 50%;
+}
+ 100% {
+   background-position: 0% 50%;
+}
+}
+.видыкофе {
+    text-decoration: none;
+    font-weight: 700px;
+    font-size: 60px;
+    text-align: center;
+}
+.видыначало {
+    font-size: 35px;
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: center;
+}
+.видытекст {
+    text-align: justify;
+    font-size: 28px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    border-radius: 3%;
+}
+.text6 {
+    margin-top: 500px;
+    text-align: center;
+}
+.какпить {
+    text-decoration: none;
+    font-weight: 700px;
+    font-size: 60px;
+    text-align: center;
+}
+.textcols2 {
+    white-space: nowrap;
+}
+.textcols-item2 {
+    margin-top: 25px;
+	white-space: normal;
+	display: inline-block;
+	width: 40%;
+	vertical-align: top;
+    text-align: justify;
+    font-size: 28px;
+    border: 0px solid #000000;
+    border-radius: 20px;
+}
+.textcols2 .textcols-item2:first-child {
+	margin-right: 20%;
+}
+.как1 {
+    font-size: 50px;
+    text-decoration: none;
+    font-weight: 700px;
+    text-align: center;
+}
+.как2 {
+    font-size: 50px;
+    text-decoration: none;
+    font-weight: 700px;
+    text-align: center;
+}
+.text7 {
+    margin-top: 500px;
+}
+.вывод {
+    text-decoration: none;
+    font-weight: 700px;
+    font-size: 60px;
+    text-align: center;
+}
+.выводтекст {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 28px;
+    width: 60%;
+    margin-left: 20%;
+}
+footer {
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    margin-top: 500px;
+    height: 200px;
+    margin-left: -120px;
+    margin-right: -120px;
+    background: linear-gradient(rgb(152, 212, 12), rgb(32, 148, 67));
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: -8px;
+    padding-bottom: 20px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.contact {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+}
+.contact_text {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    margin-right: 20px;
+}
+.contact_mail {
+    background-color: white;
+    padding: 5px;
+    border-radius: 30%;
+}
+.info {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-top: 85px;
+}
+.pravo {
+    text-align: left;
+}
+.dateredact {
+    text-align: right;
+    position: absolute;
+    right: 120px;
+}
